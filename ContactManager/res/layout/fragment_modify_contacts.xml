@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/listfilter"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:divider="@drawable/index_list_devider"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@drawable/list_index_hit_50" />
+
+    <ListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="610dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listbg_wtabs"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="40dip"
+        android:cacheColorHint="@android:color/transparent"
+        android:childDivider="@drawable/line1"
+        android:choiceMode="singleChoice"
+        android:clickable="true"
+        android:drawSelectorOnTop="false"
+        android:divider="@drawable/video_list_divider"
+        android:scrollbarStyle="outsideInset"
+        android:nextFocusUp="@android:id/list"
+        android:nextFocusDown="@android:id/list"
+        android:nextFocusLeft="@android:id/list"
+        android:listSelector="@drawable/listfocusshort_press" >
+        <requestFocus />
+    </ListView>
+
+    <TextView
+        android:id="@+id/contact_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dip"
+        android:layout_marginLeft="320dip"
+        android:text="@string/sync"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="gone" 
+       />
+
+    <ProgressBar
+        android:id="@+id/contacts_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+       android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/new_loading_animation"
+        android:layout="@+id/progressBarStyleLarge"
+        android:visibility="visible" >
+    </ProgressBar>
+
+</RelativeLayout>

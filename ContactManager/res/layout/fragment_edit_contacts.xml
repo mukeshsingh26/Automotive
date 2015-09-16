@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/listbg_wtabs"
+    android:layout_marginLeft="85dp"
+    
+        >
+
+   <LinearLayout 
+   android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dip"
+    android:layout_marginBottom="10dip"
+    >
+
+   <TextView
+	      android:id="@+id/add_list_name_label"
+	      android:layout_width="wrap_content"
+	      android:layout_height="40dip"
+	      android:textSize="20sp"
+	      android:gravity="center"
+	      android:textColor="@color/btn_text_color"
+	      android:textStyle="bold"
+	      android:text="@string/name_label"
+	      android:padding="5dip"/>
+	  
+	  <EditText
+	      android:id="@+id/add_list_name_text"
+	      android:background="@drawable/roundededittext"
+	      android:layout_width="120dip"
+	      android:layout_height="40dip"
+	    
+	      android:gravity="center"
+	      android:textStyle="bold"	     
+	      android:layout_marginLeft="40dip"
+	      android:padding="5dip"
+	     android:textColor="@color/blue"
+	     android:inputType="text"
+	  />
+	  </LinearLayout>
+	  
+   <LinearLayout 
+   android:id="@+id/phone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_below="@id/name"
+    android:layout_marginTop="10dip"
+    android:layout_marginBottom="10dip"
+    >
+	   <TextView
+	      android:id="@+id/add_list_phone_label"
+	      android:layout_width="wrap_content"
+	      android:layout_height="40dip"
+	      android:gravity="center"
+	     android:textColor="@color/btn_text_color"
+	      android:textStyle="bold"
+	      android:textSize="20sp"
+	      android:text="@string/phone_label"
+	      android:padding="5dip"/>
+	  
+	  <EditText
+	      android:id="@+id/add_list_phone_text"
+	    android:layout_width="120dip"
+	      android:layout_height="40dip"
+	   android:background="@drawable/roundededittext"
+	      android:gravity="center"
+	      android:textStyle="bold"	     
+	      android:padding="5dip"
+	      android:layout_marginLeft="10dip"
+	     android:textColor="@color/blue"
+	     android:inputType="phone"
+	  />
+	  
+	     <!-- Spinner Element -->
+    <Spinner
+        android:id="@+id/spinner_phone"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:prompt="@string/type"
+        android:padding="5dip"
+        android:layout_marginLeft="20dip"
+        android:background="@drawable/roundededittext"/>
+        
+            
+	  
+	  </LinearLayout>
+	  
+   <LinearLayout 
+   android:id="@+id/email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_below="@id/phone"
+    android:layout_marginTop="10dip"
+    android:layout_marginBottom="10dip"
+    >
+	  
+	   <TextView
+	      android:id="@+id/add_list_email_label"
+	      android:layout_width="wrap_content"
+	      android:layout_height="40dip"
+	      android:gravity="center"
+	      android:textSize="20sp"
+	      android:textColor="@color/btn_text_color"
+	      android:textStyle="bold"
+	      android:text="@string/email_label"
+	      android:padding="5dip"/>
+	  
+	  <EditText
+	      android:id="@+id/add_list_email_text"
+	      android:layout_width="120dip"
+	      android:layout_height="40dip"	
+	       android:background="@drawable/roundededittext"
+	      android:gravity="center"
+	      android:textStyle="bold"	     
+	      android:padding="5dip"
+	     android:layout_marginLeft="25dip"
+	     android:textColor="@color/blue"
+	     android:inputType="textEmailAddress"
+	  />
+	  
+	   <!-- Spinner Element -->
+    <Spinner
+        android:id="@+id/spinner_email"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:prompt="@string/type"
+        android:padding="5dip"
+        android:layout_marginLeft="20dip"
+        android:background="@drawable/roundededittext"
+        
+    />
+	  
+	  </LinearLayout>
+	  <Button 
+	      android:id="@+id/btnmodify"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:text="@string/modify"
+	      android:textSize="20sp"
+	      android:layout_marginTop="30dip"
+	      android:layout_centerInParent="true"
+	      android:layout_below="@id/email"/>
+	 
+
+    <ProgressBar
+        android:id="@+id/contacts_addprogressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+       android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/new_loading_animation"
+        android:layout="@+id/progressBarStyleLarge"
+        android:visibility="gone" >
+    </ProgressBar>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#57B0CE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_grey">#999999</color>
+    <color name="btn_text_color">#F1F2F2</color>
+    <color name="gray">#606060</color>
+     <color name="blackcolor">#000000</color>
+     <color name="colorDial">#808285</color>
+ 	<color name="btn_hit_color">#350E4D</color>    
+    <color name="static_text_color">#003366</color>
+    <color name="grid">#cccccf</color>
+    
+      <color name="red_color">#CC0033</color>
+     <color name="green_color">#00CC33</color>
+    
+</resources>
